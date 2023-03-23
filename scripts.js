@@ -1,5 +1,5 @@
 const button = document.getElementById('convert-button')
-const select= document.getElementById('currency-select')
+const select = document.getElementById('currency-select')
 
 const dolar = 5.25
 const euro = 5.56
@@ -15,18 +15,18 @@ const convertValues = () => {
     }).format(inputReais)
 
     if (select.value === 'US$ Dólar americano') {
-        currencyValueText.innerHTML = new Intl.NumberFormat('en-US', 
-        {style: 'currency', currency: 'USD' }).format(inputReais / dolar)
+        currencyValueText.innerHTML = new Intl.NumberFormat('en-US',
+            { style: 'currency', currency: 'USD' }).format(inputReais / dolar)
     }
 
     if (select.value === '€ Euro') {
-        currencyValueText.innerHTML = new Intl.NumberFormat('de-DE', 
-        {style: 'currency', currency: 'EUR' }).format(inputReais / euro)
+        currencyValueText.innerHTML = new Intl.NumberFormat('de-DE',
+            { style: 'currency', currency: 'EUR' }).format(inputReais / euro)
     }
 
     if (select.value === 'Bitcoin') {
         currencyValueText.innerHTML = new Intl.NumberFormat('en-US',
-        {style: 'currency', currency: 'BTC'}).format(inputReais * bitcoin)
+            { style: 'currency', currency: 'BTC' }).format(inputReais * bitcoin)
     }
 }
 
@@ -52,12 +52,12 @@ changeCurrency = () => {
     convertValues()
 }
 
-document.addEventListener('keypress', function(e) {
+document.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-    
+
         const btn = document.querySelector('#convert-button')
 
-    btn.click()
+        btn.click()
     }
 })
 
