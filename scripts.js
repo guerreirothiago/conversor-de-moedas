@@ -36,7 +36,7 @@ changeCurrency = () => {
 
     if (select.value === 'US$ Dólar americano') {
         currencyName.innerHTML = 'Dólar americano'
-        currencyImg.src = './assets/estados-unidos (1) 1.png'
+        currencyImg.src = '/assets/usa-img.png'
     }
 
     if (select.value === '€ Euro') {
