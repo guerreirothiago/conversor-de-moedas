@@ -1,4 +1,4 @@
-# projeto-conversor-de-moedas
+# conversor-de-moedas
 <p>Neste projeto de conversão de moedas utilizei três opções de moedas para serem convertidas para Real bastante utilizadas no mercado: dólar, euro e bitcoin.</p>
 <p>Tecnologias utilizadas:</p>
 
